@@ -1,3 +1,5 @@
+package main;
+import data.BookDB;
 import java.util.Scanner;
 
 public class BookApp {
@@ -36,10 +38,20 @@ public class BookApp {
         * Create a constructor in the BookDB  class that takes an SKU and populates the private member variables.
         * The constructor by default will return the appropriate BookDB object when it is called.
         * You do not need to include a return statement.*/
-        BookDB bDB = new BookDB();
-        System.out.println(bDB.getSKU());
+        BookDB bDB1 = new BookDB();
+        System.out.println(bDB1.getSKU());
 
-        System.out.println(bDB.getDisplayText());
+        System.out.println(bDB1.getDisplayText());
+
+
+        /**/
+        System.out.println("Please enter the SKU number: ");
+        BookDB bDB2 = new BookDB(input.nextLine());
+        System.out.println(bDB2.getDisplayText());
+        System.out.println(bDB2.getPrice());
+
+
+
 
     }
 

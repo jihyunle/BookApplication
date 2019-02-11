@@ -1,7 +1,6 @@
-import java.util.Scanner;
+package main;
 
 public class Book {
-
     private String title = "";
     private String author = "";
     private String description = "";
@@ -71,29 +70,6 @@ public class Book {
     public double calculatePrice(){
         return price * numberOfBooks;
     }
-
-//    public void showOutOfStock(){
-//        System.out.println("The book is out of stock. Please review your inventory");
-//        System.out.println("...");
-//        System.out.println("Welcome back. Would you like to create a new order? (Y|N");
-//        if ()
-//    }
-
-//    public void promptUser(){
-//        System.out.println("How many books would you like to order?");
-//        Scanner sc = new Scanner(System.in);
-//        setNumberOfBooks(sc.nextInt());
-//
-//        System.out.println("How much does the book cost each?");
-//        setPrice(sc.nextDouble());
-//
-//        System.out.println("Are the book(s) in stock? (Y|N)");
-//        if (sc.nextLine().equalsIgnoreCase("Y")){
-//            setIsInStock(true);
-//        } else {
-//            setIsInStock(false);
-//        }
-//    }
 
     public String getDisplayText(){
         return "Author: " + getAuthor() + "\t Title: " + getTitle() + "\t Description: " + getDescription() + "\t";
