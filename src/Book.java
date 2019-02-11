@@ -96,6 +96,6 @@ public class Book {
 //    }
 
     public String getDisplayText(){
-        return "Author: " + getAuthor() + "\t Title: " + getTitle() + "\t Description: " + getDescription();
+        return "Author: " + getAuthor() + "\t Title: " + getTitle() + "\t Description: " + getDescription() + "\t";
     }
 }

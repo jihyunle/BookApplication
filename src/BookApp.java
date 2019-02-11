@@ -26,11 +26,20 @@ public class BookApp {
         Scanner input = new Scanner(System.in);
         promptUser(input, b3);
         if (b3.getIsInStock()){ // if true
-            System.out.println(b3.calculatePrice());
+            System.out.println("$" + b3.calculatePrice());
 
         } else {
             showOutOfStock(input);
         }
+
+        /*
+        * Create a constructor in the BookDB  class that takes an SKU and populates the private member variables.
+        * The constructor by default will return the appropriate BookDB object when it is called.
+        * You do not need to include a return statement.*/
+        BookDB bDB = new BookDB();
+        System.out.println(bDB.getSKU());
+
+        System.out.println(bDB.getDisplayText());
 
     }
 
