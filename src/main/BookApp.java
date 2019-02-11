@@ -48,7 +48,6 @@ public class BookApp {
         System.out.println("Please enter the SKU number: ");
         BookDB bDB2 = new BookDB(input.nextLine());
         System.out.println(bDB2.getDisplayText());
-        System.out.println(bDB2.getPrice());
 
 
 

@@ -18,23 +18,24 @@ public class BookDB extends Book {
     }
 
     public BookDB(String SKU){
-        switch (SKU){
-            case "Java1001":
+        this.SKU = SKU.toUpperCase();
+        switch (this.SKU){
+            case "JAVA1001":
                 setAll("Head First Java", "Kathy Sierra and Bert Bates", "Easy to read Java workbook", 47.50);
                 break;
-            case "Java1002":
+            case "JAVA1002":
                 setAll("Thinking in Java", "Bruce Eckel", "Details about Java under the hood", 20.00);
                 break;
                 case "Orcl1003":
                 setAll("OCP: Oracle Certified Professional Java SE", "Jeanna Boyarsky", "Everything you need to know in one place", 45.00);
                 break;
-            case "Python1004":
+            case "PYTHON1004":
                 setAll("Automate the Boring Stuff with Python", "Al Sweigart", "Fun with Python", 10.50);
                 break;
-            case "Zombie1005":
+            case "ZOMBIE1005":
                 setAll("The Maker's Guide to the Zombie Apocalypse", "Simon Monk", "Defend Your Base with Simple Circuits, Arduino, and Raspberry Pi", 16.50);
                 break;
-            case "Rasp1006":
+            case "RASP1006":
                 setAll("Raspberry Pi Projects for the Evil Genius", "Donald Norris", " \tA dozen fiendishly fun projects for the Raspberry Pi!", 14.75);
                 break;
             default:
@@ -59,7 +60,7 @@ public class BookDB extends Book {
     }
 
     public String getDisplayText(){
-        return super.getDisplayText() + "SKU: " + getSKU();
+        return super.getDisplayText() + "Price: " + getPrice();
     }
 
 }
